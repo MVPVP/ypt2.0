@@ -1,5 +1,6 @@
 # ypt2.0
 重点难点记录，暂未整理
+
 1、vue组件内，如果定义js原生事件，如onclick="func()"的方法怎么写
 解决：window.func=function(){};
 
