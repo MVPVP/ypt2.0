@@ -1,0 +1,28 @@
+// 自定义小组件公共样式
+
+.m_tabBox{
+    overflow: hidden;
+}
+.m_tabBox li.cur{
+    background: #5693F6;
+    color: #fff;
+}
+.m_tabBox li{
+    width: 164px;
+    height: 42px;
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 21px;
+    font-size: 24px;
+    margin-right: 1px;
+    cursor: pointer;
+    background: #F0F3FA;
+    color: #333;
+}
+.m_dialogMain .el-textarea__inner{
+    height: 100px;
+}
+
+
+

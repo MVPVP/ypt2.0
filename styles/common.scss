@@ -1,0 +1,322 @@
+
+// 淘宝CSS样式初始化
+/*公共样式--开始*/
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size:14px;
+    color:#333;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center
+}
+
+.tr {
+    text-align: right;
+}
+.iconfont{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.inline{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+em.a{
+    width: 1em;
+    display: inline-block;
+}
+em.aa{
+    width: 2em;
+    display: inline-block;
+}
+em.aaa{
+    width: 3em;
+    display: inline-block;
+}
+// ======
+$color_bg: #F7F8FC;
+$color_active: #4381E6;//主色
+$head_height: 80px;
+.btnDel{
+    color: #E44343;
+}
+.i_star{
+    color: #E44343;
+}
+html{
+    background: $color_bg;
+}
+
+.layout_min_width{
+    min-width: 1600px;
+}
+.el-date-editor .el-range-separator{
+    width: 10%;
+}
+.el-menu-item, .el-submenu__title{
+    height: 50px;
+    line-height: 50px;
+}
+.el-submenu .el-menu-item{
+    height: 46px;
+    line-height: 46px;
+}
+.el-table__body tr.current-row>td,
+.el-table--striped .el-table__body tr.el-table__row--striped.current-row td
+{
+    background: #409EFF;
+    color: #fff;
+    .el-button{
+        color: #fff;
+    }
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+    background: #86c1fd;
+    color: #fff;
+    .el-button{
+        color: #fff;
+    }
+}
+.f-header{//维护详情内容头部文件；
+
+    .el-date-editor--daterange.el-input__inner{
+        width: 220px;
+    }
+    .el-date-editor--datetimerange.el-input__inner{
+        width: 340px;
+    }
+    .el-row{
+        margin: 0 0 10px 0;
+    }
+    label{
+        width: 90px;
+        display: inline-block;
+    }
+    .el-input,.el-select {
+        width: 180px;
+    }
+    .btnBox{
+        margin: 0 0 15px 0;
+    }
+}
+
+.f-contain{
+    .btnBox{
+        margin-bottom: 15px;
+        .el-button{
+            margin-right: 20px;
+        }
+    }
+}
+// element-ui
+.el-select-dropdown__item{
+    padding: 0 20px;
+}
+.el-date-editor.el-input, .el-date-editor.el-input__inner{
+    width: 100%;
+}
+
+// el-table;begin
+
+.el-table td, .el-table th{
+    text-align: center;
+}
+
+// dialog
+.el-dialog{
+    background: #F0F3FA;
+    // h3{
+    //     color: #417ccc;
+    //     font-size: 16px;
+    //     line-height: 18px;
+    //     margin: 15px 0;
+    //     border-left: 3px solid #417ccc;
+    //     text-indent: 10px;
+    // }
+}
+.m_borderLeft_title{
+    color: #417ccc;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 15px 0;
+    border-left: 3px solid #417ccc;
+    text-indent: 10px;
+}
+.dialog-footer{
+  padding-right: 40px;
+  min-height: 10px;
+}
+.el-dialog__header{
+    padding-left: 40px;
+}
+.el-dialog__header,.el-dialog__body,.el-dialog__footer{
+    
+}
+.el-dialog__body{
+    background: #fff;
+    margin: 0 40px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.ztree_box{
+    background: #F7F8FC;
+    position: relative;
+    .f-header{
+        background: #fff;
+        padding-left: 10px;
+        .btnBox{
+            line-height: 40px;
+        }
+    }
+    .f-contain{
+        overflow: hidden;
+        .box{
+            float: left;
+            width: 100%;
+            margin-top: 10px;
+            padding: 0 0 10px 10px;
+            background: #fff;
+        }
+    }
+}
+.ztree_aside{
+    width: 260px;
+    float: left;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-right: 10px;
+    overflow: auto;
+}
+.ztree_article{
+    margin-left: 270px;
+
+}
+.custom-tree-node{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.m-cardBox{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    .header{
+        background: #ddddddde;
+        line-height: 20px;
+        padding: 10px;
+        height: 40px;
+    }
+    .main{
+        padding: 10px;
+    }
+}
+.m_footBox{
+    text-align: center;
+    margin: 10px;
+}
+.m_dialogHead{
+    position: relative;
+    .right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #909399;
+    }
+}
+
+.m_form_rightInfo{//form表单右边信息
+    position: absolute;
+    right: -50px;
+    top: 0;
+    color: #909399;
+}
+
+.m_label_text{
+    font-size: 14px;
+    line-height: 30px;
+    margin: 10px 0;
+    label{
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        color: #232323;
+    }
+}
